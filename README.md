@@ -1,2 +1,0 @@
-# practice
-Repositorio para practicas
