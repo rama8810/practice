@@ -1,1 +1,13 @@
-<p>con-estado works!</p>
+<div class="container">
+  <!---- Seccion de productos (componentes stateless)-->
+  <section class="section">
+    <h1 class="title">PRODUCTS</h1>
+    <div class="columns">
+      <div class="column" *ngFor="let item of modeloTienda.tiendaItems">
+        <!-----  ------>
+        {{ item.titulo }}
+        <!-----  ------>
+      </div>
+    </div>
+  </section>
+</div>
