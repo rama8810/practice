@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-co">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Desafío Encriptador de Texto </title>
+	<!--main style-->
+	<link rel="stylesheet" href="style.css">
+	<!-- Enlaza Font Awesome -->
+	<script src="https://kit.fontawesome.com/3c33f7adf4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<textarea name="textoEncriptarDesencriptar" id="textoEntrada"></textarea>
-
-	<button class="btn primary"></button>
-	<button class="btn secondary"></button>
+	<header><img src="assets/alura.png" alt="logoAlura"></header>
+	<main>			
+		<div class="textoEntrada">
+			<textarea name="textoEncriptarDesencriptar" id="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
+			
+			<p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>	
+			
+			<div class="botones">
+				<button class="btn primary">Encriptar</button>
+				<button class="btn secondary">Desencriptar</button>
+			</div>						
+		</div>
+		<div class="textoSalida">			
+			<textarea name="textoEncriptadoDesencriptado" id="textoSalida"></textarea>
+			<img src="assets/matacho.png" alt="dibujo">		
+			
+			
+			<p><strong>Ningún mensaje fue encontrado</strong></p>
+			<p>Ingresa el texto que desees encriptar o desencriptar</p>
+			<button class="btn secondary copiar">Copiar</button>			
+		</div>			
+	</main>
+	<footer></footer>	
 </body>
 </html>
