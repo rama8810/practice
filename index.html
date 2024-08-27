@@ -16,23 +16,24 @@
 		<div class="textoEntrada">
 			<textarea name="textoEncriptarDesencriptar" id="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
 			
-			<p><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>	
+			<p id="parrafoEntrada"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>	
 			
 			<div class="botones">
-				<button class="btn primary">Encriptar</button>
-				<button class="btn secondary">Desencriptar</button>
+				<button onclick="encriptar();" class="btn primary">Encriptar</button>
+				<button onclick="desencriptar()" class="btn secondary">Desencriptar</button>
 			</div>						
 		</div>
 		<div class="textoSalida">			
 			<textarea name="textoEncriptadoDesencriptado" id="textoSalida"></textarea>
-			<img src="assets/matacho.png" alt="dibujo">		
+			<img src="assets/matacho.png" id="imagen" alt="dibujo">		
 			
 			
-			<p><strong>Ningún mensaje fue encontrado</strong></p>
-			<p>Ingresa el texto que desees encriptar o desencriptar</p>
-			<button class="btn secondary copiar">Copiar</button>			
+			<p id="parrafoSalida"><strong>Ningún mensaje fue encontrado</strong><br>
+			Ingresa el texto que desees encriptar o desencriptar</p>
+			<button onclick="copiar()" id="copiar" class="btn secondary copiar">Copiar</button>			
 		</div>			
 	</main>
-	<footer></footer>	
+	<footer></footer>
+	<script src="myScripts.js"></script>	
 </body>
 </html>
